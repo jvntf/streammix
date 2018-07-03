@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>stream mix</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+	<script type="text/javascript" src='https://code.jquery.com/ui/1.12.1/jquery-ui.min.js'></script>
+	<script type="text/javascript" src='main.js'></script>
+	<script type="text/javascript" src='controls.js'></script>
+	<script type="text/javascript" src='jquery.knob.js'></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tone/13.2.0/Tone.js"></script>
+</head>
+<body>
+	<div id='container'>
+
+		<div id='surface'>
+
+			<div id='deckA' class='deck'>deckA</div>
+			<div id='deckB' class='deck'>deckB</div>
+
+
+			<div id='mixer'>
+				<div class='box-top'></div>
+				<div id='eqA' class='box-top'>
+					<input id='eqA_hi' type="text" value="0" data-width="30" data-height="30" data-min="-10" data-max = "10" data-angleArc=250 data-angleOffset="-125" data-cursor=true>
+					<input id='eqA_mid' type="text" value="0" data-width="30" data-height="30" data-min="-10" data-max = "10" data-angleArc=250 data-angleOffset="-125" data-cursor=true>
+					<input id='eqA_lo' type="text" value="0" data-width="30" data-height="30" data-min="-10" data-max = "10" data-angleArc=250 data-angleOffset="-125" data-cursor=true>
+				</div>
+
+				<div id='eqB' class='box-top'>
+					<input type="text" value="0" class="dial" data-width="30" data-height="30" data-min="-10" data-max = "10" data-angleArc=250 data-angleOffset="-125" data-cursor=true>
+					<input type="text" value="0" class="dial" data-width="30" data-height="30" data-min="-10" data-max = "10" data-angleArc=250 data-angleOffset="-125" data-cursor=true>
+					<input type="text" value="0" class="dial" data-width="30" data-height="30" data-min="-10" data-max = "10" data-angleArc=250 data-angleOffset="-125" data-cursor=true>
+				</div>
+				<div class='box-top'></div>
+
+
+				<div id='cntrlA' class='box-bottom'>cntA</div>
+
+				<div id='faderA' class='box-bottom'>
+					<div class='container'>
+						<div id='handle' class='ui-slider-handle'></div>
+					</div>
+					<!-- <div class='track'></div> -->
+				</div>
+				<div id='faderMaster' class='box-bottom'>
+					<div class='container'>
+						<div id='handle' class='ui-slider-handle'></div>
+					</div>
+				</div>
+				<div id='faderB' class='box-bottom'>
+					<div class='container'>
+						<div id='handle' class='ui-slider-handle'></div>
+					</div>
+				</div>
+				
+				<div id='cntrlB' class='box-bottom'>cntB</div>
+			</div>
+		</div>
+
+		<div id='browser'>	
+		</div>
+	</div>
+
+</body>
+</html>
